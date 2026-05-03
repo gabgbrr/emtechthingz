@@ -7,65 +7,8 @@
     <title>Six Dots | Visual-Impairment Learning Simplified</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <style>
-        #homeimgs {transition: 0.5s;}
-        #homeimgs:hover {transition: 0.5s; transform:scale(1.05);}
-
-        #boxone, #boxtwo {
-            transition: 1s;
-            border: solid 10px;
-            border-radius: 25px;
-            border-color: #afc1dd;
-            background-color: #afc1dd;
-            width: 35%;
-            text-align: justify;
-            align-content: center;
-            padding: 20px;
-            box-shadow: -1px 3px 5px #ccc4c3;
-        }
-
-        #boxone:hover, #boxtwo:hover {
-            background-color: #fff;
-            border-color: #fff;
-            transition: 1s;
-        }
-
-        .extras {
-            transition: 0.3s;
-            background-color: #fff;
-            padding: 4em;
-            display: flex;
-            gap: 2em;
-            align-items: baseline;
-        }
-
-        #extraBox {
-            transition: 0.3s;
-            border: solid 10px;
-            border-color: #98c1d9;
-            background-color: #98c1d9;
-            border-radius: 30px;
-            width: 35em;
-            text-indent: 10px;
-        }
-
-        #extraBox:hover {
-            transition: 0.5s;
-            transform: scale(1.05);
-            cursor: pointer;
-            background-color: #3d5a80;
-            border-color: #3d5a80;
-            color: #fab22c;
-        }
-
-        .extralinks {
-            color: #000;
-            text-align: center;
-            font-size: 32px;
-        }
-    </style>
 </head>
+
 <body>
     <div id="links">
         <img src="logo.png" alt="RCAP Product Logo" style="object-fit: cover; padding-left: 1em;" width="70" height="70"><!--300x300 best-->
@@ -75,14 +18,14 @@
 
     <section id="pageheader">
         <h1 style="text-align: center; font-size: 48px;"><span id="headereffect">Blindness</span> shouldn't hinder learning.</h1>
-        <h3 style="text-align: center; font-weight: 400;">Through our product, <b>Six Dots</b>, we have created a more accessible and easy way of arithmetic learning for the visually impaired.</h3>
+        <h3 style="text-align: center; font-weight: 400;">Through our product, we have created a more accessible and easy way of arithmetic learning for the visually impaired.</h3>
     </section>
 
     <!--Info section na ito-->
 
     <section class="productinfo">
         <div id="boxone">
-            <h1>Learning made easier</h1>
+            <h1 style="text-align: left;">Say hello to <b>Six Dots</b></h1>
             <p>Six Dots is an inclusive and tactile math card game specifically designed to help visually impaired children build and practice arithmetic skills in an engaging, interactive way.</p>
         </div>
 
@@ -92,7 +35,7 @@
     <!--DITO IIINSERT YUNG VLOG!!!-->
     <section style="text-align: center;">
         <br>
-        <h1>See how our product works or something!</h1>
+        <h1>Watch how it all works</h1>
             <video src="housetour.mp4" style="width: 70%; height: auto; border-radius: 10px; margin-top: 2vw; margin-bottom: 2vw;" controls autoplay>
                  <source src="samplevid.mp4" type="video/mp4">
             </video>
@@ -108,6 +51,37 @@
         </div>
     </section>
 
+    <br><br>
+    <!--Mission and vision-->
+    <section id="missiv">
+        <h1>Our Mission</h1>
+        <p>To empower visually impaired children by developing accessible, tactile learning solutions that bridge the gap in math education. We are committed to:</p>
+        <br>
+
+        <div id="missiv_content">
+            <div class="missiv_content">
+                <h2>Innovation</h2>
+                    <div id="missiv_ib">
+                        <p>Designing durable, multi-sensory card games that utilize Braille and unique tactile indents for independent play.
+                    </div>
+            </div>
+            <div class="missiv_content">
+                <h2>Inclusivity</h2>
+                    <div id="missiv_ib">
+                        <p>Creating shared environments where visually impaired and sighted learners can collaborate and compete on an equal playing field.
+                    </div>
+            </div>
+            <div class="missiv_content">
+                <h2>Engagement</h2>
+                    <div id="missiv_ib">
+                        <p>Transforming arithmetic practice from a challenging obstacle into a motivating and interactive experience.
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+
     <section class="extras">
         <a id="extraBox" href="faq.html" class="extralinks">
             <p>FAQs</p>
@@ -118,15 +92,9 @@
         </a>
 
         <a id="extraBox" href="prototype.html" class="extralinks">
-            <p>Blueprints</p>
+            <p>See the Prototype</p>
             <!--<img src="" alt="" width="" style="border-radius: 15px; width: 100%; height: auto;">-->
         </a>
-    </section>
-
-    <!--Mission and vision-->
-    <section id="missiv">
-        <h1>Our Mission</h1>
-        <p>To empower visually impaired children by developing accessible, tactile learning solutions that bridge the gap in math education. We are committed to:</p>
     </section>
 
     <footer>
