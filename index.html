@@ -4,9 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCAP Something Something</title>
+    <title>Six Dots | Visual-Impairment Learning Simplified</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        #homeimgs {transition: 0.5s;}
+        #homeimgs:hover {transition: 0.5s; transform:scale(1.05);}
+
+        #boxone, #boxtwo {
+            transition: 1s;
+            border: solid 10px;
+            border-radius: 25px;
+            border-color: #afc1dd;
+            background-color: #afc1dd;
+            width: 35%;
+            text-align: justify;
+            align-content: center;
+            padding: 20px;
+            box-shadow: -1px 3px 5px #ccc4c3;
+        }
+
+        #boxone:hover, #boxtwo:hover {
+            background-color: #fff;
+            border-color: #fff;
+            transition: 1s;
+        }
+
+        .extras {
+            transition: 0.3s;
+            background-color: #fff;
+            padding: 4em;
+            display: flex;
+            gap: 2em;
+            align-items: baseline;
+        }
+
+        #extraBox {
+            transition: 0.3s;
+            border: solid 10px;
+            border-color: #98c1d9;
+            background-color: #98c1d9;
+            border-radius: 30px;
+            width: 35em;
+            text-indent: 10px;
+        }
+
+        #extraBox:hover {
+            transition: 0.5s;
+            transform: scale(1.05);
+            cursor: pointer;
+            background-color: #3d5a80;
+            border-color: #3d5a80;
+            color: #fab22c;
+        }
+
+        .extralinks {
+            color: #000;
+            text-align: center;
+            font-size: 32px;
+        }
+    </style>
 </head>
 <body>
     <div id="links">
@@ -15,9 +73,9 @@
             <a href="#contactinfo" style="padding-left: 3em;" class="headerlinks">Contact Us</a>
     </div>  
 
-    <section id="showcase">
-        <h1 style="text-align: center; font-size: 48px;">Impairments shouldn't hinder learning.</h1>
-        <h3 style="text-align: center; font-weight: 300;">Here at [insert company name], we have discovered a way to make learning more accessible to the visually impaired.</h3>
+    <section id="pageheader">
+        <h1 style="text-align: center; font-size: 48px;"><span id="headereffect">Blindness</span> shouldn't hinder learning.</h1>
+        <h3 style="text-align: center; font-weight: 400;">Through our product, <b>Six Dots</b>, we have created a more accessible and easy way of arithmetic learning for the visually impaired.</h3>
     </section>
 
     <!--Info section na ito-->
@@ -25,7 +83,7 @@
     <section class="productinfo">
         <div id="boxone">
             <h1>Learning made easier</h1>
-            <p><b>Lorem Ipsum</b> ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es 1960, mit dem erscheinen von "Letraset", welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.</p>
+            <p>Six Dots is an inclusive and tactile math card game specifically designed to help visually impaired children build and practice arithmetic skills in an engaging, interactive way.</p>
         </div>
 
         <img id="homeimgs" src="https://oecdedutoday.com/wp-content/uploads/2021/06/Skills-outlook-2021-blog.jpg" alt="image of product being used" style="border-radius: 35px; object-fit: cover; max-width: 60%; height: auto;">
@@ -46,37 +104,38 @@
 
         <div id="boxtwo">
             <h1>Impairments are no longer a hurdle.</h1>
-            <p><b>Lorem Ipsum</b> ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es 1960, mit dem erscheinen von "Letraset", welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.</p>
+            <p>Unlike traditional educational board games that rely heavily on visual elements, this product integrates braille text and customized indents to ensure that players with visual impairment can participate.</p>
         </div>
     </section>
 
     <section class="extras">
         <a id="extraBox" href="faq.html" class="extralinks">
             <p>FAQs</p>
-            <img src="" alt="" width="" style="border-radius: 15px; width: 100%; height: auto;">
         </a>
         
         <a id="extraBox" href="team.html" class="extralinks">
             <p>Meet the Team</p>
-            <img src="" alt="" width="" style="border-radius: 15px; width: 100%; height: auto;">
         </a>
 
         <a id="extraBox" href="prototype.html" class="extralinks">
             <p>Blueprints</p>
-            <img src="" alt="" width="" style="border-radius: 15px; width: 100%; height: auto;">
+            <!--<img src="" alt="" width="" style="border-radius: 15px; width: 100%; height: auto;">-->
         </a>
     </section>
-    <hr />
+
+    <!--Mission and vision-->
+    <section id="missiv">
+        <h1>Our Mission</h1>
+        <p>To empower visually impaired children by developing accessible, tactile learning solutions that bridge the gap in math education. We are committed to:</p>
+    </section>
 
     <footer>
         <div>
             <img src="logo.png" alt="" style="width: 30%; height: auto; padding: 30px;">
         </div>
-        <div style="padding-top: 30px;">
-            <span style="font-weight: 300; color: #f0f0f0;">Bl. Pier Giorgio Frassati, O.P. Bldg., University of Santo Tomas, Espa&ntilde;a Blvd.,<br /> Sampaloc, Manila, Philippines 1008<br /><br />0321 123 4567<br />insertlegitimate@gmail.com</span>
+        <div style="padding-top: 5vw;">
+            <span style="font-weight: 300; color: #f0f0f0;">Bl. Pier Giorgio Frassati, O.P. Bldg., University of Santo Tomas, Espa&ntilde;a Blvd.,<br /> Sampaloc, Manila, Philippines 1008<br /><br />&#40;&#43;63&#41; 969 229 9291<br />insertlegitimateemail@ust.edu.ph</span>
         </div>
-        <div id=""></div>
-        <p id="contactinfo"></p>
     </footer>
 </body>
 </html>
