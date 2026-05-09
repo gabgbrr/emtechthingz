@@ -16,8 +16,8 @@
 
         
         @media screen and (max-width: 600px) {
-             /* Your mobile-only overrides go here */
-            .missiv_ib {display: block;}
+                body {font-size: 6vw;}
+                .missiv_ib {display: block;}
         }
 
         h1 {
