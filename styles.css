@@ -1,31 +1,54 @@
-        .noto-sans-regular {
-                  font-family: "Noto Sans", sans-serif;
-                  font-optical-sizing: auto;
-                  font-weight: 900;
-                  font-style: normal;
-                  font-variation-settings:
-                    "wdth" 100;
-                }
 
-        body {
-            font-family: "Noto Sans";
-            font-size: 18px;
-            overflow-x: hidden;
-            background-color: #f8f8f8;
-            user-select: none; /* sorry i cannot allow you to see the horrors of my layout */
+        .noto-sans-regular {
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-variation-settings: 
+                "wdth" 100;
         }
 
-        /* default a css */
-        a {
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 3.5vw;
+        }
+
+        p {
+            font-size: 1.5vw;
+        }
+        
+        body {
+            font-family: "Noto Sans";
+            font-size: 1.5vw;
+            overflow-x: hidden;
+            background-color: transparent;
+            user-select: none; /* sorry i cannot allow you to see the horrors of my layout */
+            background-image: url("web_bg.png");
+            background-attachment: fixed; /* This makes it "sticky" to the screen */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #header {
+            background-color: #fac825;
+            align-content: center;
+        }
+
+        .headerlinks {
             text-decoration: none;
-            color: #f0f0f0;
-            transition: 0.3s;
+            color: #000;
+            padding-left: 3em;
+            transition: 0.2s;
         }
 
         .headerlinks:hover {
+            color: #f0f0f0;
             transition: 0.3s;
-            text-decoration: dotted;
-            color: #6abba9;
         }
 
         #links {
@@ -41,34 +64,30 @@
         }
 
         #pageheader {
+            z-index: 1;
             transition: 0.3s;
-            background-color: #fcf6e8;
-            padding: 25%;
-        }
-
-        #pageheader:hover {
-            transition: 0.5s;
-            background-color: #afc1dd;
+            background-color: transparent;
+            padding: 15%;
         }
 
         .productinfo {
             font-size: 18px;
             font-weight: 400;
             transition: 0.3s;
-            background-color: #fff;
+            background-color: #f8e4a2;
             padding: 5em;
             display: flex;
-            gap: 2em;
+            gap: 5vw;
         }
 
         .prodbenefits {
             font-size: 100%;
             font-weight: 400;
             transition: 0.3s;
-            background-color: #d2ddf5;
+            background-color: #f8e482;
             padding: 4em;
             display: flex;
-            gap: 2em;
+            gap: 5vw;
         }
 
         footer {
@@ -77,20 +96,20 @@
             width: 100%;
             grid-template-columns: auto auto auto;
             gap: 10%;
-            background-color: #3d5a80;
+            background-color: #fac825;
         }
 
         /* index.html css */
 
-                #homeimgs {transition: 0.5s;}
+        #homeimgs {transition: 0.5s;}
         #homeimgs:hover {transition: 0.5s; transform:scale(1.05);}
 
         #boxone, #boxtwo {
             transition: 1s;
             border: solid 10px;
             border-radius: 25px;
-            border-color: #afc1dd;
-            background-color: #afc1dd;
+            border-color: #fab22c;
+            background-color: #fab22c;
             width: 35%;
             text-align: justify;
             align-content: center;
@@ -98,18 +117,8 @@
             box-shadow: -1px 3px 5px #ccc4c3;
         }
 
-        #boxone:hover, #boxtwo:hover {
-            background-color: #fff;
-            border-color: #fff;
-            transition: 1s;
-        }
-
-        @keyframes floatUp {
-            0% {transform: translateY(0vw);}
-            100% {transform: translateY(-2vw);}
-        }
-
         #missiv {
+            background-color: #f8e482;
             transition: 0.3s;
             text-align: center;
             padding: 2vw;
@@ -123,6 +132,7 @@
 
         /* inner block */
         #missiv_ib {
+            z-index: -1;
             border: 1px solid transparent;
             background-color: transparent;
             color: transparent;
@@ -136,8 +146,8 @@
 
         .missiv_content:hover {
             transition: 0.3s;
+            z-index: 2;
             cursor: pointer;
-            transform: scale(1.05);
         }
 
         .missiv_content:hover > #missiv_ib {
@@ -148,8 +158,16 @@
             border-width: 30%;
             height: auto;
             transition: 0.5s;
-            transform: translateY(-5vw);
+            transform: translateY(-2.4vw);
             height: 70%;
+        }
+
+        #missiv_v {
+            border: solid 0.5px;
+            border-radius: 15px;
+            text-align: center;
+            background-color: transparent;
+            padding: 2vw;
         }
 
         .extras {
@@ -157,7 +175,7 @@
             background-color: #fff;
             padding: 4em;
             display: flex;
-            gap: 2em;
+            gap: 3vw;
             align-items: baseline;
         }
 
@@ -182,6 +200,8 @@
 
         .extralinks {
             transition: 1s;
+            text-decoration: none;
+            padding: 1vw;
             color: #000;
             text-align: center;
             font-size: 32px;
