@@ -17,7 +17,7 @@
         
         @media screen and (max-width: 600px) {
              /* Your mobile-only overrides go here */
-            body { transform: scale(0.5);
+            .missiv_ib {display: block;}
         }
 
         h1 {
