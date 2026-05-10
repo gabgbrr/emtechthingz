@@ -12,9 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
+        .contentbox {
+            border: solid 1px transparent;
+            background-color: #f8e4a2;
+            width: 100%;
+        }
+
+        .pagedivider {
+            background-color: #ffe251;
+            text-align: center;
+            padding: 2vw;
+        }
+
         #image_container {
             transform: scale(1);
-            transition: 1.5s;
+            transition: 0.8s;
             border: solid 1px;
             border-color: #f0f0f0;
             border-radius: 5px;
@@ -25,8 +37,16 @@
         #image_container:hover {
             cursor: crosshair;
             overflow: hidden;
-            transition: 0.8s;
+            transition: 0.4s;
             transform: scale(1.4);
+        }
+
+        #mechanics {
+            margin: 6vw;
+            padding: 0.8vw;
+            background-color: #f8e482;
+            text-align: justify;
+            border-radius: 25px;
         }
     </style>
 </head>
@@ -42,24 +62,42 @@
 
     <section id="pageheader">
         <h1 style="text-align: center; font-size: 48px;">Prototype Development</h1>
-        <h3 style="text-align: center; font-weight: 400;">Witness the design and development behind our prototype!</h3>
+        <h3 style="text-align: center; font-weight: 400;">Mechanics and Blueprints behind Six Dots</h3>
     </section>
 
-    <div style="text-align: center; padding-top: 5em;">
-        <h1>Our prototype in development</h1>
-        <h6 style="font-weight: 500;">Hover over image to enlarge.</h6>
-        <img src="prototype_blueprint.jpg" alt="" id="image_container">
-    </div>
+    <section id="mechanics">
+        <h1 style="text-align: center;">Mechanics</h1>
+        <p>The game is designed to bridge the accessibility gap by allowing visually impaired and sighted children to engage in a shared arithmetic challenge. At its core, the game revolves around using math operations to interact with specific point values on a custom board. Players rely on tactile cues, such as the unique indents at the top of each card, to ensure they are holding the card correctly before reading the Braille value positioned just below the printed number. This multi-sensory design ensures that every player can identify their hand independently and participate in the calculations without needing sighted assistance.</p>
+        <br>
+        <p>Here is how you play the game&#58;</p>
+        <ol style="margin-left: 2vw; margin-right: 2vw;">
+            <li><b>Preparation&#58;</b> Distribute the three types of cards—Point cards, Math cards Set 1, and Math cards Set 2—which are easily distinguishable by their specific corner indents.</li>
+            <li><b>Identifying Targets&#58;</b> Locate the Point cards on the custom board; these represent the target values that players need to reach or "defuse".</li>
+            <li><b>Calclation Phase&#58;</b>U se the Math cards in your hand to perform arithmetic operations aimed at matching the value of a Point card.</li>
+            <li><b>Verification&#58;</b> Confirm card values through the Braille labels created with a braille slate tool, or use the optional QR-code audio feedback for digital confirmation.</li>
+            <li><b>Scoring&#58;</b> Successfully "defuse" the point cards by reaching the correct sum or result to earn points for your team or yourself.</li>
+            <li><b>Collaborative Play&#58;</b> Throughout the game, sighted and visually impaired players can communicate and strategize together, as the high-contrast colors and tactile markings make the game state clear to everyone.</li>
+        </ol>
+    </section>
 
-    <div style="text-align: center; padding-top: 5em;">
-        <h1>The final product</h1>
-        <h6 style="font-weight: 500;">Hover over image to enlarge.</h6>
-        <img src="prototype-2a.jfif" alt="" id="image_container">
-    </div>
+    <br><br><br><br><br>
 
+    
+    <div class="pagedivider">
+        <h1>Prototype Blueprints</h1>
+        <span style="font-size: 1.5vw; font-weight: 400;">Hover over image to enlarge.</span>
+    </div><br>
 
-    <div style="text-align: center; padding-top: 5em;">
-        <h1>Indivudal Cards</h1>
+    <img src="prototype_blueprint.jpg" alt="" id="image_container" style="margin-left: 25%;">
+
+    <br><br><br><br><br>
+
+    <div class="pagedivider">
+        <h1>Individual Cards</h1>
+        <span style="font-size: 1.5vw; font-weight: 400;">Hover over each image to enlarge.</span>
+    </div><br>
+
+    <div style="text-align: center;">
         <div style="display: grid; grid-template-columns: auto auto auto auto auto; position: relative;">
             <div>
                 <img src="prototype-2b.jfif" alt="" id="image_container">
@@ -75,8 +113,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
     <footer>
@@ -84,7 +120,7 @@
             <img src="logo.png" alt="" style="width: 30%; height: auto; padding: 30px;">
         </div>
         <div style="padding-bottom: 2vw; padding-top: 2vw;">
-            <span style="font-weight: 300; color: #000;">Bl. Pier Giorgio Frassati, O.P. Bldg., University of Santo Tomas, Espa&ntilde;a Blvd.,<br /> Sampaloc, Manila, Philippines 1008<br /><br />&#40;&#43;63&#41; 969 229 9291<br />insertlegitimateemail@ust.edu.ph</span>
+            <span style="font-weight: 300; color: #000;">Bl. Pier Giorgio Frassati, O.P. Bldg., University of Santo Tomas, Espa&ntilde;a Blvd.,<br /> Sampaloc, Manila, Philippines 1008<br /><br />&#40;&#43;63&#41; 000-000-0000<br />sixdotsgame@gmail.com</span>
         </div>
     </footer>
 </html>
